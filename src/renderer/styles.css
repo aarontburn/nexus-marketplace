@@ -11,16 +11,28 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #app {
+html {
+    font-size: clamp(62.5%, 1vw, 125%);
+}
+
+html,
+body,
+#app {
     height: 100%;
     width: 100%;
+
 }
 
 body {
     margin: 0;
     display: flex;
+    overflow-y: hidden;
 }
 
 webview {
-    height: 100%;
+    height: calc(100% + 5rem);
+    width: 100%;
+    border: none;
+    position: absolute;
+    bottom: 0;
 }

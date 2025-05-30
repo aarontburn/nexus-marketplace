@@ -1,11 +1,16 @@
 {
-    "name": "Sample Web Browser Module",
-    "id": "developer.Sample_Web_Module",
-    "author": "developer",
+    "name": "Marketplace",
+    "id": "aarontburn.Marketplace",
+    "author-id": "683193056e5989838dcf772c",
+    "author": "aarontburn",
     "version": "1.0.0",
     "description": "A developer template to embed websites within Nexus.",
     "platforms": [],
     "link": "https://github.com/aarontburn/nexus-template-webpage",
+    "git-latest": {
+        "git-username": "aarontburn",
+        "git-repo-name": "nexus-marketplace"
+    },
     "build": {
         "build-version": 1,
         "excluded": [

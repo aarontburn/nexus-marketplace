@@ -3,10 +3,8 @@ const sendToProcess = (eventType: string, ...data: any[]): Promise<void> => {
     return window.ipc.sendToProcess(eventType, data);
 }
 
-const url: string = "https://github.com/aarontburn/nexus-core/blob/main/docs/getting_started/Introduction.md#Nexus";
-
-// Handle events from the process.
-const handleEvent = (eventType: string, data: any[]) => {
+const url: string = "https://www.nexus-app.net/marketplace";
+window.ipc.onProcessEvent((eventType: string, data: any[]) => {
     switch (eventType) {
         case "user-agent": {
             // Create the webview
@@ -28,14 +26,7 @@ const handleEvent = (eventType: string, data: any[]) => {
             break;
         }
     }
-}
-
-// Attach event handler.
-window.ipc.onProcessEvent((eventType: string, data: any[]) => {
-    handleEvent(eventType, data);
 });
-
-
-// Instruct the module process to initialize once the renderer is ready.
 sendToProcess("init");
+
 
