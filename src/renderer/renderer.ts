@@ -12,6 +12,7 @@ window.ipc.onProcessEvent((eventType: string, data: any[]) => {
 
             const html: string = `
                 <webview 
+                    id="webview"
                     src="${loadURL}"
                     partition="${partition}" 
                     userAgent="${userAgent}"
@@ -30,7 +31,6 @@ window.ipc.onProcessEvent((eventType: string, data: any[]) => {
                     }
                     ::-webkit-scrollbar-track-piece {
                         background: transparent;
-                        
                     }
                     ::-webkit-scrollbar-thumb {
                         background: gray;
