@@ -3,16 +3,20 @@
     "id": "aarontburn.Marketplace",
     "author-id": "683193056e5989838dcf772c",
     "author": "aarontburn",
-    "version": "1.0.0",
-    "description": "A developer template to embed websites within Nexus.",
-    "platforms": [],
-    "link": "https://github.com/aarontburn/nexus-template-webpage",
+    "version": "1.0.1",
+    "description": "Browse and install modules directly from within your Nexus client.",
+    "platforms": [
+        "win32",
+        "darwin",
+        "linux"
+    ],
+    "link": "https://github.com/aarontburn/nexus-marketplace",
     "git-latest": {
         "git-username": "aarontburn",
         "git-repo-name": "nexus-marketplace"
     },
     "build": {
-        "build-version": 2,
+        "build-version": 4,
         "excluded": [
             "electron.ts"
         ],
